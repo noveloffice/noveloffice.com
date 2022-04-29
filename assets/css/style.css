@@ -189,8 +189,8 @@ span.ra-icons:hover {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: url("../images/home-banner.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.9)), to(rgba(51, 51, 51, 0.3))), url("../images/home-banner-option-1.webp");
+    background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.3)), url("../images/home-banner-option-1.webp");
     background-attachment: scroll;
     background-position: 50% 0;
     overflow: hidden
