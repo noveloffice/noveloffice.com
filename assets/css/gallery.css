@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.rs-gallery-banner {
+    background-image: url(../images/gallary-banner.webp);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.rs-overlay {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgb(0 0 0/10%);
+}
+
+.rs-gallery-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.rs-gallery-heading {
+    font-size: 50px;
+    font-family: "dosis";
+    font-weight: 500;
+    line-height: 1.3em;
+    letter-spacing: 20px;
+    color: #f7f7f7;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1200px) {
+    .rs-gallery-heading {
+        font-size: 8vw;
+        letter-spacing: 5px;
+    }
+}
+
+
+/* Gallery Section */
+
+/* Style the tab */
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 16px;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #a8a8a8;
+    text-transform: uppercase;
+    font-family: 'open sans';
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: #000;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 33.33%;
+    /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+}
+
+.column-2 {
+    -ms-flex: 66.66%;
+    /* IE10 */
+    flex: 66.66%;
+    max-width: 66.66%;
+    padding: 0 4px;
+}
+
+.column img,
+.column-2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .tabcontent {
+        max-width: 95%;
+    }
+    
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+}

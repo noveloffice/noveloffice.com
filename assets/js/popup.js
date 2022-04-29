@@ -1,0 +1,1 @@
+var mpopup=document.getElementById("mpopupBox"),mpLink=document.getElementById("mpopupLink"),close=document.getElementsByClassName("close")[0];mpLink.onclick=function(){mpopup.style.display="flex"},close.onclick=function(){mpopup.style.display="none"},window.onclick=function(p){p.target==mpopup&&(mpopup.style.display="none")};
